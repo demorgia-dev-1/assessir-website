@@ -1,0 +1,167 @@
+/* ---------- Hero Section ---------- */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #16222a, #3a6073);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.hero-button {
+  background-color: #fff;
+  color: #16222a;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* ---------- Empowering Section ---------- */
+.empower-section {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff; /* makes all text white by default */
+}
+
+.empower-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.empower-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.empower-section p {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  margin: 1rem 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.empower-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.empower-section li {
+  font-size: 1.05rem;
+  color: #e6e6e6;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  padding-left: 1.5rem;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.empower-section li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+}
+
+
+/* ---------- Features Section ---------- */
+.features {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  background-color: #f8f8f8;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.feature-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #007cf0;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ---------- CTA Section ---------- */
+.cta {
+  background-color: #1e3c72;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #00dfd8;
+  color: #1e3c72;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00c7c2;
+}
