@@ -1,18 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import './Navbar.css';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
-      <h1>Asses-Sir</h1>
-      <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/services">Services</Link>
-        <Link to="/contact">Contact</Link>
+      <div className="nav-container">
+        <div className="logo">
+          <ScrollLink to="hero" smooth={true} duration={500} className="logo">
+            Asses-Sir
+          </ScrollLink>
+        </div>
+
+        <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+          <ScrollLink to="hero" smooth={true} duration={500} offset={-60}>Home</ScrollLink>
+          <ScrollLink to="about" smooth={true} duration={500} offset={-60}>About</ScrollLink>
+          <ScrollLink to="features" smooth={true} duration={500} offset={-60}>Features</ScrollLink>
+          <ScrollLink to="cta" smooth={true} duration={500} offset={-60}>Get Started</ScrollLink>
+        </div>
+
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        </div>
       </div>
     </nav>
   );
 };
 
 export default Navbar;
+
+

@@ -1,11 +1,12 @@
 import React from 'react';
 import './Home.css';
-
+import WhyChoose from '../Components/WhyChoose';
+import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="hero-content">
           <h1>Revolutionizing Online Assessments with AI-Powered Technology</h1>
           <p>
@@ -14,9 +15,16 @@ const Home = () => {
           <a href="#product" className="hero-button">Explore Asses-Sir Portal</a>
         </div>
       </section>
-
+      
       {/* Empowering Assessments Section */}
-      <section className="empower-section">
+      <section id="about" className="empower-section">
+        <motion.section
+          className="empower-section"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+        ></motion.section>
         <div className="empower-wrapper">
           <h2>Asses-Sir: Empowering Assessments Nationwide</h2>
           <p>
@@ -32,8 +40,9 @@ const Home = () => {
           </p>
         </div>
       </section>
+      <WhyChoose />
       {/* Features Section */}
-      <section className="features">
+      <section id="features" className="features">
         <h2>Key Features</h2>
         <div className="feature-list">
           <div className="feature-item">
@@ -52,12 +61,15 @@ const Home = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="cta">
+      <section id="cta" className="cta">
         <h2>Join the Future of Assessments</h2>
         <p>Experience the power of Asses-Sir today. Sign up now to streamline your assessment processes!</p>
         <a href="#signup" className="cta-button">Get Started</a>
       </section>
+      
+
     </>
+    
   );
 };
 

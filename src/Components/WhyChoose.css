@@ -1,0 +1,33 @@
+.why-choose {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.why-choose li {
+  font-size: 1.1rem;
+  color: white;
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.why-choose li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #00dfd8;
+}

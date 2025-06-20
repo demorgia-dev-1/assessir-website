@@ -1,0 +1,54 @@
+.about-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-header p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-mission h2,
+.about-highlights h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-mission p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-highlights ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-highlights li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.about-highlights li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #00dfd8;
+}
