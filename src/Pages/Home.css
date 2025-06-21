@@ -1,4 +1,32 @@
 /* ---------- Hero Section ---------- */
+
+.hero {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-image-slider {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+
+
+
 .hero {
   min-height: 85vh;
   background: linear-gradient(to right, #16222a, #3a6073);
@@ -44,53 +72,61 @@
 }
 
 /* ---------- Empowering Section ---------- */
-.empower-section {
+.empowering-section {
   background: linear-gradient(to right, #16222a, #3a6073);
-  padding: 2rem 2rem;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.empowering-heading {
   text-align: center;
-  color: #ffffff; /* makes all text white by default */
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-.empower-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+.empowering-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
 }
 
-.empower-section h2 {
-  font-size: 2rem;
+.empowering-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding-left: 6rem;  /* <-- added this line to shift content right */
+}
+
+
+.empowering-content p {
+  font-size: 1rem;
+  line-height: 1.6;
   margin-bottom: 1rem;
-  color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.empower-section p {
-  font-size: 1.1rem;
-  color: #f0f0f0;
-  margin: 1rem 0;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+.empowering-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
-.empower-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+.empowering-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
 }
 
-.empower-section li {
-  font-size: 1.05rem;
-  color: #e6e6e6;
-  margin-bottom: 0.5rem;
-  text-align: left;
-  padding-left: 1.5rem;
-  position: relative;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+.empowering-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
 }
 
-.empower-section li::before {
-  content: '✔️';
-  position: absolute;
-  left: 0;
-}
 
 
 /* ---------- Features Section ---------- */
@@ -170,4 +206,57 @@
 
 .cta-button:hover {
   background-color: #00c7c2;
+}
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #1b1b2f;
+  color: white;
+  text-align: center;
+}
+
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #007cf0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
 }

@@ -1,76 +1,80 @@
 .contact-section {
+  background: linear-gradient(to right, #16222a, #3a6073);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-left {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #16222a, #3a6073);
-  padding: 4rem 2rem;
-  color: #fff;
-  flex-wrap: wrap;
-  gap: 3rem;
 }
 
-.contact-form-container {
+.contact-left img {
+  max-width: 90%;
+  height: auto;
+}
+
+.contact-right {
   flex: 1;
-  max-width: 500px;
+  padding: 2rem;
+  background-color: #20435b;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.contact-form-container h2 {
+.contact-right h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-.contact-form {
+.contact-right p {
+  margin-bottom: 1.5rem;
+}
+
+.contact-right form {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem 1rem;
-  border: none;
+.contact-right input,
+.contact-right textarea {
+  padding: 1rem;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  border: none;
   font-size: 1rem;
-  backdrop-filter: blur(4px);
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #ddd;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.contact-form button {
-  background-color: #ff758c;
+  background-color: #2f3d4c;
   color: white;
-  padding: 0.8rem 1.5rem;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+  color: #ccc;
+}
+
+.contact-right button {
+  padding: 1rem;
+  background-color: #007cf0;
   border: none;
-  border-radius: 8px;
+  color: white;
   font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
-.contact-form button:hover {
-  background-color: #ff5f7e;
-}
-
-.contact-image {
-  flex: 1;
-  max-width: 500px;
-}
-
-.contact-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.contact-right button:hover {
+  background-color: #005ecb;
 }

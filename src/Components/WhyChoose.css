@@ -1,33 +1,33 @@
-.why-choose {
-  background: linear-gradient(to right, #16222a, #3a6073);
+.why-choose-section {
   padding: 4rem 2rem;
+  background: linear-gradient(to right, #16222a, #3a6073);
+  color: white;
   text-align: center;
 }
 
-.why-choose h2 {
+.why-choose-section h2 {
   font-size: 2rem;
-  color: white;
   margin-bottom: 2rem;
 }
 
-.why-choose ul {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.why-choose li {
-  font-size: 1.1rem;
-  color: white;
-  margin: 1rem 0;
-  position: relative;
-  padding-left: 1.5rem;
+.feature-card {
+  background: white;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.why-choose li::before {
-  content: '✔️';
-  position: absolute;
-  left: 0;
-  color: #00dfd8;
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }

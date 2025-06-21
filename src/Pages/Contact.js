@@ -1,25 +1,23 @@
 import React from 'react';
 import './Contact.css';
-import contactImg from '../assets/contact-illustration.png';
-import contactImage from '../assets/contact-illustration.png';
-
+import contactImg from '../Assets/contact-illustration.png';
 
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
-      <h2 className="contact-title">Let’s Connect For Questions Or Demo? Reach Out To Us!</h2>
       <div className="contact-container">
-        <form className="contact-form">
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
-          <input type="email" placeholder="E-mail" required />
-          <input type="tel" placeholder="Phone" required />
-          <textarea placeholder="Enter your message" rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-
-        <div className="contact-image">
+        <div className="contact-left">
           <img src={contactImg} alt="Contact Illustration" />
+        </div>
+        <div className="contact-right">
+          <h1>Contact Us</h1>
+          <p>Have questions or need support? We're here to help.</p>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
@@ -27,4 +25,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 

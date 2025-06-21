@@ -1,26 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './WhyChoose.css';
-import { motion } from 'framer-motion';
+
+const features = [
+  'Aligned with NSDC Guidelines',
+  'Designed for Assessment Agencies',
+  'Secure and Scalable Platform'
+];
 
 const WhyChoose = () => {
-  useEffect(() => {
-    console.log("WhyChoose component mounted");
-  }, []);
-
   return (
-    <motion.section 
-      className="why-choose"
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <section id="whychoose" className="why-choose-section">
       <h2>Why Choose 'Asses-Sir'</h2>
-      <ul>
-        <li>Aligned with NSDC Guidelines</li>
-        <li>Designed for Assessment Agencies</li>
-        <li>Secure and Scalable Platform</li>
-      </ul>
-    </motion.section>
+      <div className="feature-cards">
+        {features.map((text, index) => (
+          <div key={index} className="feature-card">
+            {text}
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

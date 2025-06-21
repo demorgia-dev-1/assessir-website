@@ -20,8 +20,10 @@ const Navbar = () => {
 
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
           <ScrollLink to="hero" smooth={true} duration={500} offset={-60}>Home</ScrollLink>
-          <ScrollLink to="about" smooth={true} duration={500} offset={-60}>About</ScrollLink>
+          <ScrollLink to="empowering-section" smooth={true} duration={500} offset={-60}>About</ScrollLink>
           <ScrollLink to="features" smooth={true} duration={500} offset={-60}>Features</ScrollLink>
+          <ScrollLink to="evaluation" smooth={true} duration={500} offset={-70}>Product</ScrollLink>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-70}>Contact</ScrollLink>
           <ScrollLink to="cta" smooth={true} duration={500} offset={-60}>Get Started</ScrollLink>
         </div>
 
